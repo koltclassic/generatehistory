@@ -19,6 +19,6 @@
 
 # Learn more: http://github.com/javan/whenever
 
-every 4.hours do
+every 1.hours do
   command "cd ~/MarkovText && ruby markovchain.rb"
 end
