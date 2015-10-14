@@ -35,7 +35,7 @@
  def image_merge
       background = MiniMagick::Image.open('white.jpg')
       background.combine_options do |c|
-        c.font "/Users/KoltEwing/Library/Fonts/BebasNeue.otf"
+        c.font "./BebasNeue.otf"
         c.pointsize 14
         c.gravity "center"
         c.annotate '0,0', "#{@tester}"
@@ -78,4 +78,4 @@
   @formattedname = rng_files.match(/^(\w+?)\./).to_s.gsub!(/[\.|\_]/, ' ')
 
   image_merge
-  tweet
+  
